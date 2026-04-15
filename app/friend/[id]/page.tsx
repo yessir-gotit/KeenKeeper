@@ -9,6 +9,8 @@ import friendsData from "@/data/friends.json";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+
+
 export default function FriendDetailPage({params}: {
   params: Promise<{ id: string }>;
 }) {

@@ -40,7 +40,7 @@ export default function Navbar() {
           <li>
             <Link 
               href="/" 
-              className="flex items-center gap-2 bg-[#2F5847] text-white px-4 py-2.5 rounded-md hover:bg-[#244537] transition-colors"
+              className="flex items-center gap-2 bg-green-800 text-white px-4 py-2.5 rounded-md hover:bg-green-900 transition-colors"
             >
               <Home size={18} />
               Home
