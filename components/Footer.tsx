@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="bg-[#2d5240] w-full flex justify-center pt-16 pb-10 px-4">
+    <div className="bg-green-900 w-full flex justify-center pt-16 pb-10 px-4">
       <div className="w-full max-w-[1600px] flex flex-col items-center mt-5">
         
         <h1 className="text-white text-4xl md:text-5xl font-bold mb-4 tracking-wide">

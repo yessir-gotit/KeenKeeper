@@ -8,7 +8,7 @@ export default function Navbar() {
         
         <Link href="/" className="text-2xl flex items-center">
           <span className="font-extrabold text-gray-900">Keen</span>
-          <span className="font-semibold text-[#2F5847]">Keeper</span>
+          <span className="font-extrabold text-green-900">Keeper</span>
         </Link>
 
         <div className="dropdown dropdown-end md:hidden">
@@ -49,7 +49,7 @@ export default function Navbar() {
           <li>
             <Link 
               href="/timeline" 
-              className="flex items-center gap-2 text-[#64748B] hover:bg-gray-50 px-4 py-2.5 rounded-md transition-colors"
+              className="flex items-center gap-2 text-gray-500 hover:bg-gray-200 px-4 py-2.5 rounded-md transition-colors"
             >
               <Clock size={18} />
               Timeline
@@ -58,7 +58,7 @@ export default function Navbar() {
           <li>
             <Link 
               href="/stats" 
-              className="flex items-center gap-2 text-[#64748B] hover:bg-gray-50 px-4 py-2.5 rounded-md transition-colors"
+              className="flex items-center gap-2 text-gray-500 hover:bg-gray-200 px-4 py-2.5 rounded-md transition-colors"
             >
               <LineChart size={18} />
               Stats

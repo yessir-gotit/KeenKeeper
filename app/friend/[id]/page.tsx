@@ -1,5 +1,5 @@
 "use client";
-
+import { notFound } from 'next/navigation';
 import React, { use } from "react";
 import Image from "next/image";
 import {Bell, Archive, Trash2, Phone, MessageSquare, Video} from "lucide-react";
@@ -18,7 +18,9 @@ export default function FriendDetailPage({params}: {
   const friend = friendsData.find(
     (f) => f.id.toString() === unwrappedParams.id,
   );
-
+  if (!friend) {
+      return notFound();
+    }
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString("en-US", {month: "short", day: "numeric",year: "numeric",  });
