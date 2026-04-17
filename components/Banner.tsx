@@ -1,16 +1,16 @@
-import { Plus } from "lucide-react"
+import { Plus } from "lucide-react";
 
 export default function Banner() {
   return (
     <div className="bg-[#f8f9fa] w-full flex justify-center pt-20 pb-10 px-4">
       <div className="w-full max-w-[1600px] flex flex-col items-center">
-        
         <h1 className="text-3xl md:text-4xl font-bold text-black text-center mb-4">
           Friends to keep close in your life
         </h1>
-        
+
         <p className="text-gray-500 text-center max-w-2xl text-sm md:text-base mb-8">
-          Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
+          Your personal shelf of meaningful connections. Browse, tend, and
+          nurture the relationships that matter most.
         </p>
 
         <button className="flex items-center gap-2 bg-[#2F5847] hover:bg-[#244537] text-white px-5 py-2.5 rounded-md font-medium transition-colors mb-12 shadow-sm cursor-pointer">
@@ -41,8 +41,7 @@ export default function Banner() {
         </div>
 
         <div className="w-full max-w-5xl border-b border-gray-200 mt-10"></div>
-        
       </div>
     </div>
-  )
+  );
 }

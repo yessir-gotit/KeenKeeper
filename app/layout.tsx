@@ -17,12 +17,16 @@ export const metadata: Metadata = {
   description: "Created by Nafij :)",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" suppressHydrationWarning> 
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body className="min-h-screen bg-base-100 text-base-content">
         {children}
       </body>
     </html>
-  )
+  );
 }

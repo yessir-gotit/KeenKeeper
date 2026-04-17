@@ -1,37 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KeenKeeper
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16.2.3-black?style=for-the-badge&logo=next.js" alt="Next.js">
+  <img src="https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tailwind-4.2.2-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind">
+</p>
 
-First, run the development server:
+> Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
+
+KeenKeeper is a personal relationship management app that helps you stay connected with the friends who matter most. Track your interactions, set relationship goals, and visualize your friendship maintenance patterns.
+
+---
+
+## 🚀 Key Features
+
+### 1. Friend Management Dashboard
+
+Keep all your important relationships in one place. View your friends' profiles with their contact history, relationship status, and next due dates. The dashboard provides a quick overview of your social wellness with stats showing total friends, those on track, and those needing attention.
+
+### 2. Interaction Logging
+
+Easily log how you've connected with friends through quick check-ins—Call, Text, or Video. Each interaction is timestamped and saved to your personal timeline, helping you maintain meaningful connections without the mental overhead of remembering last contact.
+
+### 3. Analytics & Timeline
+
+Gain insights into your relationship maintenance patterns with visual analytics. The Stats page features an interactive pie chart showing your interaction distribution by type. The Timeline provides a chronological feed of all your check-ins, filterable by interaction type.
+
+---
+
+## 🛠️ Technologies Used
+
+| Category       | Technology         |
+| -------------- | ------------------ |
+| **Framework**  | Next.js 16.2.3     |
+| **UI Library** | React 19.2.4       |
+| **Language**   | TypeScript         |
+| **Styling**    | Tailwind CSS 4.2.2 |
+| **Components** | DaisyUI 5.5.19     |
+| **Charts**     | Recharts           |
+| **Icons**      | Lucide React       |
+
+---
+
+## 📦 Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/keenkeeper.git
+cd keenkeeper
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+keenkeeper/
+├── app/                    # Next.js App Router pages
+│   ├── friend/[id]/       # Individual friend profile page
+│   ├── stats/             # Analytics dashboard
+│   ├── timeline/          # Interaction history timeline
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home/dashboard page
+├── components/            # Reusable UI components
+│   ├── Banner.tsx         # Hero section with stats
+│   ├── Footer.tsx         # Site footer
+│   ├── FriendsGrid.tsx    # Friends list grid
+│   └── Navbar.tsx         # Navigation bar
+├── data/                  # Static data files
+│   └── friends.json       # Sample friend data
+├── public/                # Static assets
+└── package.json           # Dependencies
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Route          | Description                                   |
+| -------------- | --------------------------------------------- |
+| `/`            | Dashboard with friend grid and stats overview |
+| `/friend/[id]` | Individual friend profile with quick check-in |
+| `/timeline`    | Chronological list of all interactions        |
+| `/stats`       | Analytics charts showing interaction patterns |
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# KeenKeeper
+---
