@@ -48,7 +48,7 @@ Gain insights into your relationship maintenance patterns with visual analytics.
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/keenkeeper.git
+git clone https://github.com/ProgrammingHero1/B13-A7-keen-keeper.git
 cd keenkeeper
 npm install
 ```
