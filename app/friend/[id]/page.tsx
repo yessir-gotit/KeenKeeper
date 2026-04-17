@@ -2,14 +2,7 @@
 import { notFound } from "next/navigation";
 import React, { use } from "react";
 import Image from "next/image";
-import {
-  Bell,
-  Archive,
-  Trash2,
-  Phone,
-  MessageSquare,
-  Video,
-} from "lucide-react";
+import { Bell, Archive, Trash2, Phone, MessageSquare, Video} from "lucide-react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

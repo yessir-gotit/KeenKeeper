@@ -69,7 +69,7 @@ export default function StatsPage() {
               </div>
             ) : (
               <div>
-                {/* Chart Container */}
+
                 <div className="w-full h-[350px]">
                   <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
